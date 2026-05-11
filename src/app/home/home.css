@@ -1,0 +1,39 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1976d2;
+  padding: 12px 20px;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Navigation */
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Active link */
+.active {
+  border-bottom: 2px solid #ffeb3b;
+}
+
+/* Content area */
+.container {
+  padding: 20px;
+}

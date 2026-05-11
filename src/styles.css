@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+.container {
+  width: 300px;
+  margin: 80px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #125aa0;
+}
