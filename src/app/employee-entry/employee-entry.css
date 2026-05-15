@@ -1,0 +1,74 @@
+.employee-form {
+  width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+}
+
+.employee-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.employee-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employee-form input,
+.employee-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.employee-form input:focus,
+.employee-form select:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.4);
+}
+
+.employee-form button {
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.employee-form button:hover {
+  background: #125aa0;
+}
+
+.success {
+  margin-top: 15px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
+
+.error {
+  margin-top: 15px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .employee-form {
+    width: 90%;
+    padding: 20px;
+  }
+}

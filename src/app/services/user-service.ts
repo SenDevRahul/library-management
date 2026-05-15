@@ -17,4 +17,9 @@ export class UserService {
     const url=environment.apiBaseUrl+"/user/login";
     return this.http.post(url,user);
   }
+  
+  signUp(user: User){
+    const url=environment.apiBaseUrl+"/user/createUser";
+    return this.http.post(url,user);
+  }
 }

@@ -3,7 +3,7 @@
 
   <form (ngSubmit)="onLogin()">
     <div>
-      <label>Email</label>
+      <label>User Id</label>
       <input type="email" [(ngModel)]="email" name="email" required />
     </div>
 
@@ -15,8 +15,9 @@
     <button type="submit">Login</button>
   </form>
 
-  <p>
-    Don't have an account?
-    <a routerLink="/signup">Signup</a>
-  </p>
+  <p class="signup-text">
+  Don't have an account?
+  <a routerLink="/signup">Signup</a>
+</p>
+ <p class="text-danger" [innerHTML]="errorMassage"></p>
 </div>

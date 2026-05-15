@@ -1,11 +1,134 @@
-<header class="header">
-  <div class="logo">My App</div>
-  <nav class="nav">
-    <a routerLink="book" routerLinkActive="active">Book</a>
-    <a routerLink="employee" routerLinkActive="active">Employee</a>
-  </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
 
-<div class="container">
+  <!-- Logo + Brand -->
+  <a class="navbar-brand d-flex align-items-center gap-2"
+     routerLink="/home/dashboard">
+
+    <img
+      src="/angular-21-tut/src/assets/logo.jpg"
+      alt="Library Logo"
+      width="45"
+      height="45"
+      class="rounded-circle"
+    />
+
+    <span class="fw-bold fs-4">
+      Library Management
+    </span>
+
+  </a>
+
+  <!-- Mobile Toggle Button -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarContent"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar Content -->
+  <div class="collapse navbar-collapse" id="navbarContent">
+
+    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+      <!-- Dashboard -->
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/home/dashboard"
+          routerLinkActive="active"
+        >
+          Dashboard
+        </a>
+      </li>
+
+      <!-- Book Dropdown -->
+      <li class="nav-item dropdown">
+
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+        >
+          Book
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="/home/book-entry"
+            >
+              Add Book
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="/book/list"
+            >
+              Book List
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="/book/issue"
+            >
+              Issue Book
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <!-- Employee Dropdown -->
+      <li class="nav-item dropdown">
+
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+        >
+          Employee
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="/home/employee-entry"
+            >
+              Add Employee
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="/employee/list"
+            >
+              Employee List
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+<div class="container-fluid mt-3">
   <router-outlet></router-outlet>
 </div>

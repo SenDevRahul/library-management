@@ -3,6 +3,9 @@ import { Login } from './login/login';
 import { Signup } from './signup/signup';
 import { Home } from './home/home';
 import { Dashboard } from './dashboard/dashboard';
+import { BookEntryComponent } from './book-entry/book-entry';
+import { EmployeeEntryComponent } from './employee-entry/employee-entry';
+
 
 export const routes: Routes = [
   {
@@ -24,7 +27,9 @@ export const routes: Routes = [
 
      children: [
       { path: 'dashboard', component: Dashboard },
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' } // default child
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' } ,
+      { path: 'book-entry', component: BookEntryComponent },
+      {path: 'employee-entry', component:EmployeeEntryComponent}
     ]
   }
 ];

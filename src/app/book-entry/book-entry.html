@@ -1,0 +1,70 @@
+<div class="book-form">
+
+  <h2>Book Entry</h2>
+
+  <form (ngSubmit)="postBook()" #bookForm="ngForm">
+
+    <input
+      type="text"
+      name="bookId"
+      [(ngModel)]="book.bookId"
+      placeholder="Book ID"
+    />
+
+    <input
+      type="text"
+      name="bookName"
+      [(ngModel)]="book.bookName"
+      placeholder="Book Name"
+      required
+    />
+
+    <input
+      type="text"
+      name="writer"
+      [(ngModel)]="book.writer"
+      placeholder="Writer"
+      required
+    />
+
+    <input
+      type="text"
+      name="publication"
+      [(ngModel)]="book.publication"
+      placeholder="Publication"
+      required
+    />
+
+    <input
+      type="text"
+      name="blockNumber"
+      [(ngModel)]="book.blockNumber"
+      placeholder="Block Number"
+    />
+
+    <input
+      type="text"
+      name="subject"
+      [(ngModel)]="book.subject"
+      placeholder="Subject"
+    />
+
+    <button type="submit">
+      Save Book
+    </button>
+
+  </form>
+
+  @if(successMessage){
+    <p class="success">
+      {{ successMessage }}
+    </p>
+  }
+
+  @if(errorMessage){
+    <p class="error">
+      {{ errorMessage }}
+    </p>
+  }
+
+</div>
